@@ -1,0 +1,170 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.div {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
+}
+.page__level {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    color: white;
+    gap: 20px;
+}
+.page__level h1 {
+    align-self: center;
+    color: rgb(96, 178, 249);
+}
+.page__level h3 {
+  padding: 0;
+  margin: 5px;
+  
+}
+.page__level button {
+    align-self: center;
+    color: white;
+    cursor: pointer;
+}
+.page__level input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width:40px
+}
+.page {
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 68%, rgba(239, 148, 255, 1) 100%);
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+            1px 2px 4px 0px rgba(0,255,255,0.7),
+            2px 4px 8px 0px rgba(0,255,255,0.7),
+            2px 4px 16px 0px rgba(0,255,255,0.7);
+}
+.page h2 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.page h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input {
+    width: 130px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border: none;
+    background-color: rgb(217, 232, 255);
+    outline: none;
+}
+
+.btn {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(130, 182, 255);
+    color: white;
+    cursor: pointer;
+    
+}
+.page__winner {
+    display: none;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+    padding: 100px;
+    box-shadow: 0px 1px 2px 0px rgba(251, 251, 251, 0.7),
+    1px 2px 4px 0px rgba(255, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(255, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(255, 11, 11, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    
+    
+  
+}
+
+.page__lose {
+    display: none;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+    padding: 100px;
+    box-shadow: 0px 1px 2px 0px rgba(251, 251, 251, 0.7),
+    1px 2px 4px 0px rgba(255, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(255, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(255, 11, 11, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    
+  
+}
+.button {
+    border-radius: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 5vw; 
+    }
+    .page h2 {
+        font-size: 6vw;
+    }
+    .page h3 {
+        font-size: 4vw; 
+    }
+
+
+}
+@media (max-width: 480px) {
+    .page {
+        padding: 10px; 
+    }
+    .page h2 {
+        font-size: 8vw; 
+    }
+    .page h3 {
+        font-size: 5vw;
+    }
+    .page__level {
+        white-space: nowrap;
+    }
+
+    .page__level h3 {
+        font-size: 12px; 
+        white-space: nowrap;
+    }
+    .page__level input {
+        width: 30px; 
+        font-size: 12px; 
+        white-space: nowrap;
+    }
+}
+

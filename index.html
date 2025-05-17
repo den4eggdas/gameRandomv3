@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="div">
+        <div class="page__winner">
+            <h1>Победа!</h1>
+            <h3>Ты угадал c <span class="try">0</span> попытки</h3>
+            <button class="button">🔁</button>
+        </div>
+        <div class="page__lose">
+            <h1>Неудача</h1>
+            <h3>В следующий раз повезет! Было загадано <span class="true">0</span></h3>
+            <button class="button" id="restart" >🔁</button>
+        </div>
+        <div class="page__level">
+            <h1>Задай сложность</h1>
+            <h3>Введи максимальное число <span class="warnMaxNum">(от 15)</span> <input type="number" min="15" max="999" placeholder="От 15" value = "15" class="maxLength" ></h3>
+            <h3>Количество попыток <span class="warnMaxTry">(до 15)</span> <input type="number" max="15" min="1" placeholder="До 15" value="1" class="maxLengthTry"></h3>
+            <button class="button" id="start" >Старт 🚀</button>
+        </div>
+    <div class="page">
+    <h2>Угадай число!</h2>
+    <h3>От 1 до <span class="factNum">100</span></h3>
+    
+   <div class="res"> <input type="number" min="1" max="100" class="input"> 
+    <button class="btn" type="submit">Угадать</button> </div>
+    <p class="p"></p>
+    <p class="pNumber">Осталось <span class="lastNum">10</span> попыток</p>
+</div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
